@@ -1,7 +1,9 @@
 <!--
     Name: Hamza Haque
-    Course: Science Honours 20FH
-    School: Fort Richmond Collegiate
+    Course: Software Development 20S
+    Teacher: Scott Hardman
+    School: Pembina Trails Early College
+    Date Last Modified: June 2, 2022
 -->
 
 <!DOCTYPE html>
@@ -17,7 +19,7 @@
 
     <style>
       /*
-        This styles the body to have a background image of a portrait of David Attenborough. The background image is centered.
+        This styles the body to have a background image of portrait of David Attenborough. The background image is centered.
         The background image is set to not repeat and appear multiple times. The background's size has been set to take
         up the entire body.
 
@@ -49,7 +51,7 @@
       */
       main {
         position: absolute;
-        top: 80%;
+        top: 50%;
         left: 50%;
         margin: auto -50% auto auto;
 
@@ -65,8 +67,6 @@
       }
 
       /*
-        ID that styles the h1 tag that says: "Sir David Attenborough"
-
         It uses the Georgia font family, if that doesn't work it uses the Times font family,
         if that doesn't work it uses the Times New Roman font, and finally it uses the serif font
         as a last resort.
@@ -78,7 +78,7 @@
 
         It is fully opaque, and has no animations to override the animations set for h1 in the external CSS. 
       */
-      #main-name-text {
+      h1 {
         margin: 30px;
         font-size: 110px;
         font-family: Georgia, Times, "Times New Roman", serif;
@@ -98,18 +98,17 @@
   </head>
   <body>
     <header>
-      <!-- Name in Header -->
+      <!-- Header name -->
       <h1 id="header-name-text">David Attenborough</h1>
       <!-- Navigation bar -->
       <nav>
         <a href="index.html" class="nav-link"><li>Home</li></a>
-        <a href="about.html" class="nav-link"><li>About</li></a>
       </nav>
     </header>
 
     <!-- The main tag is the green background -->
     <main>
-      <h1 id="main-name-text">Sir David Attenborough</h1>
+      <h1>Sir David Attenborough</h1>
     </main>
   </body>
 </html>
