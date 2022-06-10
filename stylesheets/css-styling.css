@@ -222,7 +222,7 @@ hr {
   }
 
   to {
-    width: 50%;
+    width: 75%;
     opacity: 1;
   }
 }
@@ -237,7 +237,7 @@ hr {
   }
 
   to {
-    width: 50%;
+    width: 75%;
     opacity: 1;
   }
 }
@@ -252,7 +252,7 @@ hr {
   }
 
   to {
-    width: 50%;
+    width: 75%;
     opacity: 1;
   }
 }
@@ -267,13 +267,14 @@ hr {
   }
 
   to {
-    width: 50%;
+    width: 75%;
     opacity: 1;
   }
 }
 
 figure {
   text-align: center;
+  margin: 5% 0;
 }
 
 figcaption {
@@ -397,4 +398,94 @@ figcaption {
   -moz-animation: none;
   -webkit-animation: none;
   animation: none;
+}
+
+/* 
+  This is an ID for styling the text in the footer.
+
+  It has a font colour of #2d422c and a font size of 20 pixels.
+*/
+#footer-text {
+  color: #2d422c;
+  font-size: 20px;
+}
+
+/* 
+  This is an ID for the line (hr tag) that divides the footer from the main content.
+  It has a border with a line-width of 2 pixels, is solid, and a colour of #588157.
+
+  The element starts as transparent and with no width, but then with the animation, called "grow-footer-hr", 
+  the width increases to 99% (value set after experimenting) and it becomes fully opaque in 1 second with a 0.5 second delay. 
+  The animation timing function is set to linear.
+*/
+#footer-hr {
+  border: 2px solid #588157;
+
+  width: 0;
+  opacity: 0;
+
+  -moz-animation: grow-footer-hr 1s linear 0.5s forwards;
+  -webkit-animation: grow-footer-hr 1s linear 0.5s forwards;
+  -o-animation: grow-footer-hr 1s linear 0.5s forwards;
+  animation: grow-footer-hr 1s linear 0.5s forwards;
+}
+
+/*
+  The animation for growing the footer hr from no width to 99% width, and from transparent to opaque.
+*/
+@-o-keyframes grow-footer-hr {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 99%;
+    opacity: 1;
+  }
+}
+
+/*
+  The animation for growing the footer hr from no width to 99% width, and from transparent to opaque.
+*/
+@-moz-keyframes grow-footer-hr {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 99%;
+    opacity: 1;
+  }
+}
+
+/*
+  The animation for growing the footer hr from no width to 99% width, and from transparent to opaque.
+*/
+@-webkit-keyframes grow-footer-hr {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 99%;
+    opacity: 1;
+  }
+}
+
+/*
+  The animation for growing the footer hr from no width to 99% width, and from transparent to opaque.
+*/
+@keyframes grow-footer-hr {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 99%;
+    opacity: 1;
+  }
 }
