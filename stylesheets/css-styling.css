@@ -21,7 +21,7 @@ body {
   This is to ensure that the website uses 90%-95% of the screen instead of the full 100% to provide visual relief.
 */
 main {
-  margin: 5% 10%;
+  margin: 5% 13%;
 }
 
 /* 
@@ -185,7 +185,7 @@ h1 {
 */
 p {
   color: #2d422c;
-  font-size: 20px;
+  font-size: 22px;
   font-family: Cambria, Baskerville, Garamond, "Times New Roman", serif;
   word-spacing: 5px;
   padding: 0px 70px;
