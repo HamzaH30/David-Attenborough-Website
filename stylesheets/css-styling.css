@@ -272,6 +272,18 @@ hr {
   }
 }
 
+figure {
+  text-align: center;
+}
+
+figcaption {
+  color: #2d422c;
+  font-size: 16px;
+  font-family: Cambria, Baskerville, Garamond, "Times New Roman", serif;
+  word-spacing: 5px;
+  font-style: italic;
+}
+
 /* 
   This is a class for styling the anchor tags in the navigation bar.
 
