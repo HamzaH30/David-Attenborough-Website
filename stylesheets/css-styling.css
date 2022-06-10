@@ -1,0 +1,364 @@
+/*
+  All elements will have a line height of 140% of their font size applied to all text. This is to ensure
+  there is sufficient null space around the text on the webpage.
+*/
+* {
+  line-height: 140%;
+}
+
+/*
+  This styles the entire website to have 0 pixels of margin and a background colour of #dad7cd.
+*/
+body {
+  margin: 0px;
+  background-color: #dad7cd;
+}
+
+/* 
+  This styles the main tag to have a margin of 5% for the top-and-bottom and a margin on 10% for the left-and-right. 
+  This is to ensure that the website uses 90%-95% of the screen instead of the full 100% to provide visual relief.
+*/
+main {
+  margin: 5% 10%;
+}
+
+/* 
+  This styles the header to have a position of sticky and a value of 0 for the top. This makes it so that the header 
+  and the contents in the header (restaurant name and nav bar) remain at the top of the user's browser as they scroll
+  down the webpage. A value of 1 has been set for the z-index to make sure that the header stays on top of all other elements.
+
+  This styles the header to have a background colour of #588157. As well as centering all text in the header.
+*/
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  background-color: #588157;
+  text-align: center;
+}
+
+/*
+  This styles the nav to have 20 pixels of padding only on the top-and-bottom. It also makes it an inline-block element.
+*/
+nav {
+  display: inline-block;
+  padding: 20px 0px;
+}
+
+/* 
+  This styles all main headings to have a font colour of #2d422c and have 5 pixels of margin on the bottom. 
+  This styles the headings to be centered, bold, and have a font size of 36 pixels. 
+
+  This styling uppercases the text. It also gives 4 pixels of letter spacing.
+
+  The heading text will use the Didot font family, then Palatino if Didot doesn't work, 
+  then Lucida Bright if Palatino doesn't work, and finally serif font as a last resort.
+
+  It has an animation, called "flip-vertical", that changes the opacity and rotates the text multiple times 
+  vertically (round the x-axis) within 0.8 seconds with a 0.5 second delay.
+*/
+h1 {
+  color: #2d422c;
+  margin-bottom: 5px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  letter-spacing: 4px;
+
+  font-size: 36px;
+  font-weight: bold;
+  font-family: Didot, Palatino, "Lucida Bright", serif;
+
+  opacity: 0;
+  -moz-animation: flip-vertical 0.8s ease-in-out 0.5s forwards;
+  -webkit-animation: flip-vertical 0.8s ease-in-out 0.5s forwards;
+  -o-animation: flip-vertical 0.8s ease-in-out 0.5s forwards;
+  animation: flip-vertical 0.8s ease-in-out 0.5s forwards;
+}
+
+@-o-keyframes flip-vertical {
+  from {
+    opacity: 0;
+
+    -ms-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+
+  to {
+    opacity: 1;
+
+    -ms-transform: rotateX(720deg);
+    -moz-transform: rotateX(720deg);
+    -webkit-transform: rotateX(720deg);
+    -o-transform: rotateX(720deg);
+    transform: rotateX(720deg);
+  }
+}
+
+@-moz-keyframes flip-vertical {
+  from {
+    opacity: 0;
+
+    -ms-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+
+  to {
+    opacity: 1;
+
+    -ms-transform: rotateX(720deg);
+    -moz-transform: rotateX(720deg);
+    -webkit-transform: rotateX(720deg);
+    -o-transform: rotateX(720deg);
+    transform: rotateX(720deg);
+  }
+}
+
+@-webkit-keyframes flip-vertical {
+  from {
+    opacity: 0;
+
+    -ms-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+
+  to {
+    opacity: 1;
+
+    -ms-transform: rotateX(720deg);
+    -moz-transform: rotateX(720deg);
+    -webkit-transform: rotateX(720deg);
+    -o-transform: rotateX(720deg);
+    transform: rotateX(720deg);
+  }
+}
+
+/* 
+  The animation for flipping the headings vertically (around the x-axis). It starts as transparent and at 90 degrees. 
+  It ends as fully opaque and at 720 degrees around the x-axis.
+*/
+@keyframes flip-vertical {
+  from {
+    opacity: 0;
+
+    -ms-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+
+  to {
+    opacity: 1;
+
+    -ms-transform: rotateX(720deg);
+    -moz-transform: rotateX(720deg);
+    -webkit-transform: rotateX(720deg);
+    -o-transform: rotateX(720deg);
+    transform: rotateX(720deg);
+  }
+}
+
+/*
+  This styles all paragraphs to have a font colour of #2d422c and a font size of 20 pixels.
+
+  It uses the Cambria font family, if that doesn't work then it uses the Baskerville font family,
+  if that doesn't work then it uses the Garamond font family, if that doesn't work it uses the 
+  Times New Roman font family, and finally it'll use the serif font as a last resort.
+
+  The paragraph text has a padding of 0 pixels top-and-bottom and 70 pixels left-and-right.
+  It has a word spacing of 5 pixels.
+*/
+p {
+  color: #2d422c;
+  font-size: 20px;
+  font-family: Cambria, Baskerville, Garamond, "Times New Roman", serif;
+  word-spacing: 5px;
+  padding: 0px 70px;
+}
+
+/* 
+  This styles all horizontal rules (hr) to have a border that has a line-width of 5 pixels. is solid, and has a colour of #588157.
+  All horizontal rules have a border-radius of 5 pixels (rounded ends). Their margin is auto.
+
+  They start as transparent and no width, but then with the animation, called "grow-hr", their width increase to 50% and they become fully opaque 
+  in 1 second with a 0.5 second delay. The animation timing function is set to linear.
+*/
+hr {
+  border: 5px solid #588157;
+  border-radius: 5px;
+  margin: auto;
+
+  opacity: 0;
+  width: 0;
+
+  -moz-animation: grow-hr 1s linear 0.5s forwards;
+  -webkit-animation: grow-hr 1s linear 0.5s forwards;
+  -o-animation: grow-hr 1s linear 0.5s forwards;
+  animation: grow-hr 1s linear 0.5s forwards;
+}
+
+/* 
+  The animation for increasing the width (size) and opacity of the hr tag under each h1 on every webpage (except for home page).
+*/
+@-o-keyframes grow-hr {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+/* 
+  The animation for increasing the width (size) and opacity of the hr tag under each h1 on every webpage (except for home page).
+*/
+@-moz-keyframes grow-hr {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+/* 
+  The animation for increasing the width (size) and opacity of the hr tag under each h1 on every webpage (except for home page).
+*/
+@-webkit-keyframes grow-hr {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+/* 
+  The animation for increasing the width (size) and opacity of the hr tag under each h1 on every webpage (except for home page).
+*/
+@keyframes grow-hr {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+/* 
+  This is a class for styling the anchor tags in the navigation bar.
+
+  It adds a padding of 20 pixels and changes the font colour to #dad7cd.
+
+  It changes the font-size to 21 pixels. 
+
+  It uses the Georgia font family, if that doesn't work it uses the Cambria font family, if that 
+  doesn't work then it uses the Baskerville font family, if that doesn't work then it uses the 
+  Garamond font family, if that doesn't work it uses the Times New Roman font family, and finally
+  it'll use the serif font as a last resort.
+
+  This styling uppercases the text.
+
+  It adds a transition to change the background color when the element gets hovered or focused with the tab key,
+  with a transition duration of 0.4 seconds.
+*/
+.nav-link {
+  padding: 20px;
+
+  color: #dad7cd;
+
+  font-family: Georgia, Cambria, Baskerville, Garamond, "Times New Roman", serif;
+  font-size: 25px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  -moz-transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+/* 
+  This is the styling for when an item in the navigation bar gets hovered and when it's being focused
+  with the tab key.
+
+  It changes the background colour of that item to #6a9969.
+*/
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #6a9969;
+}
+
+/* 
+  This is a descendant selector to style all list items that are in the nav-link class elements.
+
+  It styles all the list items in the nav-link class to be inline-blocks.
+*/
+.nav-link li {
+  display: inline-block;
+}
+
+/* 
+  This is an ID for styling the name in the header.
+  
+  It makes it an inline element. Adds 10 pixels of padding. Changes the font colour to #dad7cd.
+  It has a font size of 24 pixels. It is fully opaque.
+  
+  It uses the Didot font family, if that doesn't work then it uses the Palatino font family,
+  if that doesn't work then it uses the Lucida Bright font family, and finally it'll use the 
+  serif font as a last resort.
+
+  It uppercases the text. As well as having 3 pixels of letter spacing.
+  
+  A value of none has been applied to the text shadow and animation property to ensure there is no text shadow & animations 
+  for this element on the all pages.
+*/
+#name-text {
+  display: inline;
+
+  padding: 10px;
+
+  font-family: Didot, Palatino, "Lucida Bright", serif;
+  font-size: 24px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  color: #dad7cd;
+  opacity: 1;
+
+  text-shadow: none;
+
+  -o-animation: none;
+  -moz-animation: none;
+  -webkit-animation: none;
+  animation: none;
+}

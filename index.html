@@ -29,6 +29,10 @@
         position: relative;
         overflow: hidden;
       }
+
+      /* 
+        Styles the green background behind the name
+      */
       main {
         position: absolute;
         top: 80%;
@@ -49,6 +53,7 @@
       }
 
       /*
+        ID to style the Sir David Attenborough name
         It uses the Georgia font family, if that doesn't work it uses the Times font family,
         if that doesn't work it uses the Times New Roman font, and finally it uses the serif font
         as a last resort.
@@ -60,7 +65,7 @@
 
         It is fully opaque, and has no animations to override the animations set for h1 in the external CSS. 
       */
-      h1 {
+      #main-text {
         margin: 30px;
         font-size: 110px;
         font-family: Georgia, Times, "Times New Roman", serif;
@@ -79,8 +84,17 @@
     </style>
   </head>
   <body>
+    <header>
+      <!-- Restaurant name -->
+      <h1 id="name-text">David Attenborough</h1>
+      <!-- Navigation bar -->
+      <nav>
+        <a href="index.html" class="nav-link"><li>Home</li></a>
+        <a href="about.html" class="nav-link"><li>About</li></a>
+      </nav>
+    </header>
     <main>
-      <h1>Sir David Attenborough</h1>
+      <h1 id="main-text">Sir David Attenborough</h1>
     </main>
   </body>
 </html>
