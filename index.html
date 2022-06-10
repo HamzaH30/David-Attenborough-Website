@@ -13,6 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sir David Attenborough</title>
 
+    <link rel="stylesheet" href="stylesheets/css-styling.css" />
+
     <style>
       body {
         background: url("images/david-attenborough-main-picture.jpg");
@@ -27,41 +29,36 @@
         position: relative;
         overflow: hidden;
       }
-      main {
-        color: #dad7cd;
-
-        position: absolute;
-        top: 75%;
-        left: 50%;
-
-        -o-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
       h1 {
-        margin: 30px;
-        font-size: 110px;
-        font-family: Georgia, Times, "Times New Roman", serif;
-        color: #dad7cd;
-        text-transform: capitalize;
+        color: white;
+        font-size: 75px;
+        text-transform: uppercase;
+        text-align: center;
+        top: 30%;
+      }
 
-        text-shadow: 5px 3px 5px #2b2b2b;
+      #first-name {
+        position: absolute;
+        left: 16%;
+      }
 
-        opacity: 1;
-
-        -o-animation: none;
-        -moz-animation: none;
-        -webkit-animation: none;
-        animation: none;
+      #last-name {
+        position: absolute;
+        right: 1%;
       }
     </style>
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="index.html" class="nav-link"><li>Home</li></a>
+        <a href="about.html" class="nav-link"><li>About</li></a>
+      </nav>
+    </header>
     <main>
-      <h1>Sir David Attenborough</h1>
+      <h1 id="first-name">Sir David</h1>
+
+      <h1 id="last-name">Attenborough</h1>
     </main>
   </body>
 </html>
