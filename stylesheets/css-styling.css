@@ -1,3 +1,5 @@
+/* External CSS page */
+
 /*
   All elements will have a line height of 140% of their font size applied to all text. This is to ensure
   there is sufficient null space around the text on the webpage.
@@ -340,7 +342,7 @@ hr {
   A value of none has been applied to the text shadow and animation property to ensure there is no text shadow & animations 
   for this element on the all pages.
 */
-#name-text {
+#header-name-text {
   display: inline;
 
   padding: 10px;
