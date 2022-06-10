@@ -29,36 +29,58 @@
         position: relative;
         overflow: hidden;
       }
-      h1 {
-        color: white;
-        font-size: 75px;
-        text-transform: uppercase;
+      main {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        margin: auto -50% auto auto;
+
+        width: fit-content;
+
+        -o-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        color: #dad7cd;
+        background-color: #588157;
         text-align: center;
-        top: 30%;
       }
 
-      #first-name {
-        position: absolute;
-        left: 16%;
-      }
+      /*
+        It uses the Georgia font family, if that doesn't work it uses the Times font family,
+        if that doesn't work it uses the Times New Roman font, and finally it uses the serif font
+        as a last resort.
 
-      #last-name {
-        position: absolute;
-        right: 1%;
+        It has a font size of 110 pixels. Has 30 pixels of margin. Has a font colour of #dad7cd.
+        It styles the text to be capitalized.
+
+        It has a text shadow that is blurred to make it pop out, with a light shade of black.
+
+        It is fully opaque, and has no animations to override the animations set for h1 in the external CSS. 
+      */
+      h1 {
+        margin: 30px;
+        font-size: 110px;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        color: #dad7cd;
+        text-transform: capitalize;
+
+        text-shadow: 5px 3px 5px #2b2b2b;
+
+        opacity: 1;
+
+        -o-animation: none;
+        -moz-animation: none;
+        -webkit-animation: none;
+        animation: none;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1 id="name-styling">David Attenborough</h1>
-      <nav>
-        <a href="index.html" class="nav-link"><li>Home</li></a>
-        <a href="about.html" class="nav-link"><li>About</li></a>
-      </nav>
-    </header>
     <main>
-      <h1 id="first-name">Sir David</h1>
-      <h1 id="last-name">Attenborough</h1>
+      <h1>Sir David Attenborough</h1>
     </main>
   </body>
 </html>
