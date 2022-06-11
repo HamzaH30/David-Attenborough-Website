@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="stylesheets/css-styling.css" />
 
     <style>
-      #image-container {
-        text-align: center;
-      }
-
       /* The flip card container */
       .flip-card {
         background-color: transparent;
@@ -54,9 +50,22 @@
 
       /* Style the back side */
       .flip-card-back {
-        background-color: dodgerblue;
-        color: white;
+        background-color: #344e41;
         transform: rotateY(180deg);
+      }
+
+      .flip-card-back h1,
+      .flip-card-back p {
+        background-color: #344e41;
+        color: #dad7cd;
+      }
+
+      #image-container {
+        text-align: center;
+      }
+
+      #text-spilling-out {
+        font-size: 25px;
       }
     </style>
   </head>
@@ -92,98 +101,104 @@
             <div class="flip-card-front">
               <img
                 src="images/awards/the_cherry_kearton_award.jpg"
-                alt=""
+                alt="Image of the Cherry Kearton Medal and Award"
                 style="width: 300px; height: 300px"
               />
             </div>
             <div class="flip-card-back">
               <h1>Cherry Kearton Medal & Award</h1>
-              <h1>.</h1>
-              <p>.</p>
-              <p>.</p>
+              <p>1972</p>
             </div>
           </div>
         </div>
+
+        <!-- Bafta Award -->
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img
                 src="images/awards/bafta_award.jpg"
-                alt=""
+                alt="David Attenborough receiving his BAFTA fellowship."
                 style="width: 300px; height: 300px"
               />
             </div>
             <div class="flip-card-back">
-              <h1>.</h1>
-              <p>.</p>
-              <p>.</p>
+              <h1>BAFTA Fellowship</h1>
+              <p>1980</p>
             </div>
           </div>
         </div>
+
+        <!-- Kalinga Award -->
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img
                 src="images/awards/Kalinga-Award.jpg"
-                alt=""
+                alt="An image of the medal awarded for the Kalinga Prize."
                 style="width: 300px; height: 300px"
               />
             </div>
             <div class="flip-card-back">
-              <h1>.</h1>
-              <p>.</p>
-              <p>.</p>
+              <h1>Kalinga Prize</h1>
+              <p>1981</p>
             </div>
           </div>
         </div>
+
+        <!-- RSPB Medal -->
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img
                 src="images/awards/RSPB-Medal.jpg"
-                alt=""
+                alt="An image of the RSPB Medal."
                 style="width: 300px; height: 300px"
               />
             </div>
             <div class="flip-card-back">
-              <h1>.</h1>
-              <p>.</p>
-              <p>.</p>
+              <h1>RSPB Medal</h1>
+              <p>2000</p>
             </div>
           </div>
         </div>
+
+        <!-- Michael Faraday Prize -->
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img
                 src="images/awards/Royal-Society-Michael-Faraday-Prize.jpg"
-                alt=""
+                alt="An image of the Michael Faraday Medal."
                 style="width: 300px; height: 300px"
               />
             </div>
             <div class="flip-card-back">
-              <h1>.</h1>
-              <p>.</p>
-              <p>.</p>
+              <h1>Michael Faraday Prize</h1>
+              <p>2003</p>
             </div>
           </div>
         </div>
+
+        <!-- José Vasconcelos World Award of Education -->
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img
                 src="images/awards/José_Vasconcelos_World_Award_of_Education_Medal.png"
-                alt=""
+                alt="An image of the José Vasconcelos World Award of Education"
                 style="width: 300px; height: 300px"
               />
             </div>
             <div class="flip-card-back">
-              <h1>.</h1>
-              <p>.</p>
-              <p>.</p>
+              <h1 id="text-spilling-out">
+                José Vasconcelos World Award of Education
+              </h1>
+              <p>2004</p>
             </div>
           </div>
         </div>
+
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
