@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awards & Honours</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="stylesheets/css-styling.css" />
+
+    <style>
+      /* The flip card container */
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px; /* 3D effect */
+
+        /* To line them up side-by-side */
+        display: inline-block;
+      }
+
+      /* Needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Horizontal flip when mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Header name -->
+      <h1 id="header-name-text">David Attenborough</h1>
+      <!-- Navigation bar -->
+      <nav>
+        <a href="index.html" class="nav-link"><li>Home</li></a>
+        <a href="about.html" class="nav-link"><li>About</li></a>
+        <a href="career-and-work.html" class="nav-link">
+          <li>Career & Work</li>
+        </a>
+        <a href="awards-and-honours.html" class="nav-link">
+          <li>Awards & Honours</li>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <h1>Awards & Honours</h1>
+      <hr />
+      <section>
+        <p>
+          David Attenborough has been the recipient of many awards for his work
+          as an environmentalist, writer, and broadcaster.
+        </p>
+      </section>
+      <section>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="images/awards/the_cherry_kearton_award.jpg"
+                alt=""
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Cherry Kearton Medal & Award</h1>
+              <h1>.</h1>
+              <p>.</p>
+              <p>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="images/awards/bafta_award.jpg"
+                alt=""
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>.</h1>
+              <p>.</p>
+              <p>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="images/awards/Kalinga-Award.jpg"
+                alt=""
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>.</h1>
+              <p>.</p>
+              <p>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="images/awards/Kew-International-Medal.jpg"
+                alt=""
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>.</h1>
+              <p>.</p>
+              <p>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="images/awards/Cosmos-award.png"
+                alt=""
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>.</h1>
+              <p>.</p>
+              <p>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr id="footer-hr" />
+      <p id="footer-text">
+        <sup>&copy;</sup>2022 All rights reserved. Website made by
+        <a href="https://github.com/HamzaH30" target="_blank">Hamza Haque</a>.
+      </p>
+    </footer>
+  </body>
+</html>
