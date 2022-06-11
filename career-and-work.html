@@ -8,6 +8,42 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="stylesheets/css-styling.css" />
+
+    <!-- Internal CSS -->
+    <style>
+        ul {
+          color: #2d422c;
+          font-size: 22px;
+          font-family: Cambria, Baskerville, Garamond, "Times New Roman", serif;
+          word-spacing: 5px;
+          padding: 0px 70px;
+        }
+        /*
+        This is an ID that styles the anchor tag to the wikipedia link listing David Attenborough's filmography page.
+        In order to center the element on the webpage, it has been displayed as an inline-block, has a relative position,
+        is 50% away from the left side, and has been translated -50% on the x-axis.
+        It has a background colour of #588157 and a font colour of #dad7cd.
+        It has a font size of 21 pixels, a padding of 10 pixels top-and-bottom and 15 pixels of padding left-and-right.
+        It has 62 pixels of margin on the top & bottom.
+      */
+      #wikipedia-link {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+
+        -o-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+
+        background-color: #588157;
+        color: #dad7cd;
+        font-size: 21px;
+        padding: 10px 15px;
+        margin: 62px 0px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -142,6 +178,34 @@
           </blockquote>
           <figcaption>&mdash; David Attenborough</figcaption>
         </figure>
+        <p>
+          David Attenborough has written, narrated, and presented many nature
+          documentaries, including: 
+          <ul>
+            <li>Natural World</li>
+            <li>The World About Us</li>
+            <li>BBC Wildlife Specials</li>
+            <li>The Blue Planet</li>
+            <li>The Miracle of Bali</li>
+            <li>The Tribal Eye</li>
+            <li>The Discoverers</li>
+            <li>The Living Planet</li>
+            <li>Life in the Freezer</li>
+            <li>Attenborough in Paradise</li>
+            <li>The Life of Birds</li>
+            <li>State of the Planet</li>
+            <li>Extinction: The Facts</li>
+            <li>The Green Planet</li>
+          </ul>
+        </p>
+        <p>Just to name a few!</p>
+        <a
+          id="wikipedia-link"
+          href="https://en.wikipedia.org/wiki/David_Attenborough_filmography"
+          target="_blank"
+        >
+          To see a full list of David Attenborough's films and documentaries, click this link.
+        </a>
       </article>
     </main>
     <footer>
